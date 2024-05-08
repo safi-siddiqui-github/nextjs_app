@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faYoutube } from "@fortawesome/free-brands-svg-icons";
-import { faBars, faBell, faCamera, faCircleUser, faMicrophone, faSearch, faUser, faUserAlt, faVideoCamera } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faBell, faCamera, faCircleHalfStroke, faCircleUser, faEllipsisVertical, faImage, faMicrophone, faSearch, faUser, faUserAlt, faVideoCamera } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 
 export default function Page() {
@@ -30,11 +30,49 @@ export default function Page() {
                 </div>
             </header>
 
-            <section className="flex gap-3 px-5 pt-5 pb-3 overflow-x-scroll scrollbar">
+            <section className="flex flex-col p-5">
 
-                {tags.map((each, index) => (
-                    <div key={index} className="px-3 py-1 font-medium border border-slate-500 rounded cursor-pointer hover:border-black min-w-max">{each}</div>
-                ))}
+                <div className="flex gap-3 pb-2 overflow-x-scroll scrollbar">
+
+                    {tags.map((each, index) => (
+                        <div key={index} className="px-3 py-1 font-medium border border-slate-500 rounded cursor-pointer hover:border-black min-w-max">{each}</div>
+                    ))}
+
+                </div>
+
+                <div className="flex flex-col">
+
+                    <FontAwesomeIcon icon={faImage} className="" />
+
+                    <div className="flex justify-between items-start">
+
+                        <div className="flex gap-3 items-start">
+
+                            <FontAwesomeIcon icon={faCircleUser} className="w-10" />
+
+                            <div className="flex flex-col">
+                                <p className="font-medium">
+                                    Youtube Video Title
+                                </p>
+
+                                <div className="flex flex-col text-sm">
+                                    <p className="">
+                                        Youtube Channel
+                                    </p>
+                                    <p className="">
+                                        2.1K views - 14 hours ago
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <FontAwesomeIcon icon={faEllipsisVertical} className="w-1.5 cursor-pointer" />
+
+                    </div>
+
+                </div>
+
 
             </section>
 
