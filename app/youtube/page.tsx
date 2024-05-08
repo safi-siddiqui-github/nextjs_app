@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Page() {
 
-    const tags = ['All', 'Youtube', 'Upwork', 'Instagram', 'Next JS', 'Tailwind CSS', 'Supabase', 'Laravel', 'Firebase', 'MySQL', 'PostgreSQL', 'Node JS', 'Express JS', 'Mongo DB', ];
+    const tags = ['All', 'Youtube', 'Upwork', 'Instagram', 'Next JS', 'Tailwind CSS', 'Supabase', 'Laravel', 'Firebase', 'MySQL', 'PostgreSQL', 'Node JS', 'Express JS', 'Mongo DB', 'HTML', 'CSS', 'JavaScript' ];
 
     return (
         <main className="flex flex-col">
