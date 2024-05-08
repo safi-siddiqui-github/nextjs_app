@@ -7,8 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "add": "git add . && git commit -m",
-    "push": "git push"
+    "push": "git add . && git commit -m wip && git push"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.2",
