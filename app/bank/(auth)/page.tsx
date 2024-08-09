@@ -28,7 +28,7 @@ export default function Page() {
     }
 
     return (
-        <div className="flex flex-col p-6 gap-10">
+        <div className="flex flex-col px-5 py-10 gap-10">
 
             <div className="flex flex-col tracking-tight gap-1">
                 <h2 className="text-3xl">Welcome, <span className="font-medium">John</span></h2>
