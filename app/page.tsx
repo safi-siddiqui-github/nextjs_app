@@ -6,6 +6,7 @@ export default function Home() {
       <h2 className="text-5xl">Next JS APP</h2>
       <Link href={`/bank`}>Bank App</Link>
       <Link href={`/linkedin`}>Linked IN App</Link>
+      <Link href={`/kitchenDelight`}>Kitchen Delight App</Link>
     </main>
   );
 }
