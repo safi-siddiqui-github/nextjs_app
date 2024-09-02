@@ -15,6 +15,10 @@ import chickenNuggetsWithColdDrink from "@/public/kd/KD-Nuggets-Colddrink.svg"
 import garlicBread from "@/public/kd/KD-Garlic-Bread.svg"
 import garlicBreadWithColdDrink from "@/public/kd/KD-Garlic-Bread-Colddrink.svg"
 import youngsCollection from "@/public/kd/Youngs-Collection.svg"
+import chickenMacaroni from "@/public/kd/KD-Macaroni.svg"
+import cheeseMacaroni from "@/public/kd/KD-Cheese-Macaroni.svg"
+import chickenPasta from "@/public/kd/KD-Chicken-Pasta.svg"
+import cheesePasta from "@/public/kd/KD-Cheesy-Pasta.svg"
 
 export default async function Page() {
 
@@ -101,6 +105,41 @@ export default async function Page() {
                     name: 'Youngs Sauces',
                     price: '65',
                     image: youngsCollection,
+                },
+            ],
+        },
+        // {
+        //     name: 'Chicken Kebabs',
+        //     items: [
+        //         {
+        //             name: 'Chapli Kebab',
+        //             price: '160',
+        //             image: youngsCollection,
+        //         },
+        //     ],
+        // },
+        {
+            name: 'Italian',
+            items: [
+                {
+                    name: 'Chicken Macaroni',
+                    price: '200',
+                    image: chickenMacaroni,
+                },
+                {
+                    name: 'Chicken Cheese Macaroni',
+                    price: '250',
+                    image: cheeseMacaroni,
+                },
+                {
+                    name: 'Chicken Pasta',
+                    price: '200',
+                    image: chickenPasta,
+                },
+                {
+                    name: 'Chicken Cheese Pasta',
+                    price: '250',
+                    image: cheesePasta,
                 },
             ],
         },
