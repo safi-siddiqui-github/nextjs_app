@@ -9,6 +9,12 @@ import omeletteParatha from "@/public/kd/KD-Omelette-Paratha.svg"
 import chocolateBread from "@/public/kd/KD-Chocolate-Bread.svg"
 import chocolateParatha from "@/public/kd/KD-Chocolate-Paratha.svg"
 import largeChocolateParatha from "@/public/kd/KD-Large-Chocolate-Paratha.svg"
+import frenchFries from "@/public/kd/KD-French-Fires.svg"
+import chickenNuggets from "@/public/kd/KD-Chicken-Nuggets.svg"
+import chickenNuggetsWithColdDrink from "@/public/kd/KD-Nuggets-Colddrink.svg"
+import garlicBread from "@/public/kd/KD-Garlic-Bread.svg"
+import garlicBreadWithColdDrink from "@/public/kd/KD-Garlic-Bread-Colddrink.svg"
+import youngsCollection from "@/public/kd/Youngs-Collection.svg"
 
 export default async function Page() {
 
@@ -63,6 +69,41 @@ export default async function Page() {
                 },
             ],
         },
+        {
+            name: 'Fast Food',
+            items: [
+                {
+                    name: 'French Fries',
+                    price: '100',
+                    image: frenchFries,
+                },
+                {
+                    name: 'Crispy Nuggets',
+                    price: '50',
+                    image: chickenNuggets,
+                },
+                {
+                    name: 'Crispy Nuggets & Cold Drink',
+                    price: '130',
+                    image: chickenNuggetsWithColdDrink,
+                },
+                {
+                    name: 'Garlic Bread',
+                    price: '70',
+                    image: garlicBread,
+                },
+                {
+                    name: 'Garlic Bread & Cold Drink',
+                    price: '150',
+                    image: garlicBreadWithColdDrink,
+                },
+                {
+                    name: 'Youngs Sauces',
+                    price: '65',
+                    image: youngsCollection,
+                },
+            ],
+        },
     ];
 
     return (
@@ -71,6 +112,9 @@ export default async function Page() {
             <div className="px-5 py-2 flex flex-col text-center">
                 <p className="">
                     <span className="font-semibold">Kitchen Delight</span> Rates are lower on our website, and higher on foodpanda, because foodpanda charges 30% commision on every order. Order us through <span className="font-semibold">Whatsapp</span>. Thankyou !
+                </p>
+                <p className="">
+                    Delivery Charges depends upon your Area.
                 </p>
             </div>
 
