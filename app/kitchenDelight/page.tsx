@@ -19,8 +19,22 @@ import chickenMacaroni from "@/public/kd/KD-Macaroni.svg"
 import cheeseMacaroni from "@/public/kd/KD-Cheese-Macaroni.svg"
 import chickenPasta from "@/public/kd/KD-Chicken-Pasta.svg"
 import cheesePasta from "@/public/kd/KD-Cheesy-Pasta.svg"
+import chickenShamiKebab from "@/public/kd/KD-Chicken-Shami-Kebab.svg"
+import chickenSeekhKebab from "@/public/kd/KD-Chicken-Seekh-Kebab.svg"
+import chickenChapliKebab from "@/public/kd/KD-Chicken-Chapli-Kebab.svg"
+import chickenGolaKebab from "@/public/kd/KD-Chicken-Gola-Kebab.svg"
+import chickenShamiKebabRoll from "@/public/kd/KD-Chicken-Shami-Kebab-Roll.svg"
+import chickenSeekhKebabRoll from "@/public/kd/KD-Chicken-Seekh-Kebab-Roll.svg"
+import chickenChapliKebabRoll from "@/public/kd/KD-Chicken-Chapli-Kebab-Roll.svg"
+import chickenGolaKebabRoll from "@/public/kd/KD-Chicken-Gola-Kebab-Roll.svg"
+import colaNext from "@/public/kd/KD-Cola-Next.svg"
+import fizupNext from "@/public/kd/KD-Fizup-Next.svg"
+import { allUsers } from "@/model/user";
 
 export default async function Page() {
+
+    // const users = await allUsers();
+    // console.log(users);
 
     const dishes = [
         {
@@ -108,16 +122,6 @@ export default async function Page() {
                 },
             ],
         },
-        // {
-        //     name: 'Chicken Kebabs',
-        //     items: [
-        //         {
-        //             name: 'Chapli Kebab',
-        //             price: '160',
-        //             image: youngsCollection,
-        //         },
-        //     ],
-        // },
         {
             name: 'Italian',
             items: [
@@ -140,6 +144,66 @@ export default async function Page() {
                     name: 'Chicken Cheese Pasta',
                     price: '250',
                     image: cheesePasta,
+                },
+            ],
+        },
+        {
+            name: 'Chicken Kebabs & Rolls',
+            items: [
+                {
+                    name: 'Shami Kebab',
+                    price: '100',
+                    image: chickenShamiKebab,
+                },
+                {
+                    name: 'Seekh Kebab',
+                    price: '110',
+                    image: chickenSeekhKebab,
+                },
+                {
+                    name: 'Chapli Kebab',
+                    price: '160',
+                    image: chickenChapliKebab,
+                },
+                {
+                    name: 'Gola Kebab',
+                    price: '90',
+                    image: chickenGolaKebab,
+                },
+                {
+                    name: 'Shami Kebab Roll',
+                    price: '160',
+                    image: chickenShamiKebabRoll,
+                },
+                {
+                    name: 'Seekh Kebab Roll',
+                    price: '160',
+                    image: chickenSeekhKebabRoll,
+                },
+                {
+                    name: 'Chapli Kebab Roll',
+                    price: '210',
+                    image: chickenChapliKebabRoll,
+                },
+                {
+                    name: 'Gola Kebab Roll',
+                    price: '130',
+                    image: chickenGolaKebabRoll,
+                },
+            ],
+        },
+        {
+            name: 'Cold Drinks',
+            items: [
+                {
+                    name: 'Cola Next 345 ml',
+                    price: '100',
+                    image: colaNext,
+                },
+                {
+                    name: 'Fizup Next 345 ml',
+                    price: '100',
+                    image: fizupNext,
                 },
             ],
         },
