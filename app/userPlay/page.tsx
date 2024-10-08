@@ -1,4 +1,4 @@
-import { addUsers, createUsersTable } from "@/model/user";
+import { addUsers, createUsersTable } from "@/model/sql/user";
 import Image from "next/image";
 import Link from "next/link";
 

@@ -29,7 +29,7 @@ import chickenChapliKebabRoll from "@/public/kd/KD-Chicken-Chapli-Kebab-Roll.svg
 import chickenGolaKebabRoll from "@/public/kd/KD-Chicken-Gola-Kebab-Roll.svg"
 import colaNext from "@/public/kd/KD-Cola-Next.svg"
 import fizupNext from "@/public/kd/KD-Fizup-Next.svg"
-import { allUsers } from "@/model/user";
+import { allUsers } from "@/model/sql/user";
 
 export default async function Page() {
 
